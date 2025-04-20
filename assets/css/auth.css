@@ -1,0 +1,24 @@
+@import url("./style.css");
+
+body .auth-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 20vh;
+
+  /* Drop and fade-in effect */
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: dropFade 0.8s ease-out forwards;
+}
+
+@keyframes dropFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-switch {
+  text-align: center;
+  margin-top: 20px;
+}

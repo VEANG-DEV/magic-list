@@ -1,0 +1,39 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 100vh;
+  overflow: auto;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: opacity 0.8s ease-in-out;
+}
+
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #888;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  background-color: transparent !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-20px);
+  display: none !important;
+}
+
+.modal-content.show {
+  display: block !important;
+}
+
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+
