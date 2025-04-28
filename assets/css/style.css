@@ -11,6 +11,8 @@
   font-family: "Winky Sans", sans-serif;
   font-optical-sizing: auto;
 }
+/*  automatically detect if the user is in dark mode (based on their device settings) */
+
 
 body {
   background-color: var(--background-home);
