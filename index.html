@@ -1,45 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" >
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Magic List</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="icon" href="./assets/images/logo.png" type="image/png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  </head>
-  <body class="">
-    <nav class="container py-2 d-flex align-items-center justify-content-between">  
-      <div class="d-flex align-items-cennter gap-1 flex-grow-1">
-        <img class="w-[2%]" style="width: 3%; height: fit-content;" src="./assets/images/magiclist.png" alt="">
-        <h3>Magic List</h3>
-      </div>
-      <div class="d-flex align-items-end gap-3">
-        <div class="dropdown d-flex align-items-center gap-1">
-          <svg id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#000" d="M16 10c0 2.21-1.79 4-4 4s-4-1.79-4-4s1.79-4 4-4s4 1.79 4 4"/><path fill="#000" fill-rule="evenodd" d="M12 24c6.63 0 12-5.37 12-12S18.63 0 12 0S0 5.37 0 12s5.37 12 12 12m6.27-2.96C21.13 19.05 23 15.75 23 12c0-6.08-4.92-11-11-11S1 5.92 1 12c0 3.75 1.87 7.05 4.73 9.04C6.435 19.72 8.71 16 12 16s5.56 3.72 6.27 5.04" clip-rule="evenodd"/></svg>
-          <ul class="dropdown-menu p-2 " aria-labelledby="dropdownMenuButton">
-            <li class="d-flex justify-content-between align-items-cennter">
-              <p>Profile</p>
-              <svg id="toggleDarkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" d="m21.067 11.857l-.642-.388zm-8.924-8.924l-.388-.642zM21.25 12A9.25 9.25 0 0 1 12 21.25v1.5c5.937 0 10.75-4.813 10.75-10.75zM12 21.25A9.25 9.25 0 0 1 2.75 12h-1.5c0 5.937 4.813 10.75 10.75 10.75zM2.75 12A9.25 9.25 0 0 1 12 2.75v-1.5C6.063 1.25 1.25 6.063 1.25 12zm12.75 2.25A5.75 5.75 0 0 1 9.75 8.5h-1.5a7.25 7.25 0 0 0 7.25 7.25zm4.925-2.781A5.75 5.75 0 0 1 15.5 14.25v1.5a7.25 7.25 0 0 0 6.21-3.505zM9.75 8.5a5.75 5.75 0 0 1 2.781-4.925l-.776-1.284A7.25 7.25 0 0 0 8.25 8.5zM12 2.75a.38.38 0 0 1-.268-.118a.3.3 0 0 1-.082-.155c-.004-.031-.002-.121.105-.186l.776 1.284c.503-.304.665-.861.606-1.299c-.062-.455-.42-1.026-1.137-1.026zm9.71 9.495c-.066.107-.156.109-.187.105a.3.3 0 0 1-.155-.082a.38.38 0 0 1-.118-.268h1.5c0-.717-.571-1.075-1.026-1.137c-.438-.059-.995.103-1.299.606z"/></svg>
+<html lang="en">
 
-            </li>
-            <li class="d-flex" id="logoutBtn">
-              <p>
-                Logout
-              </p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" fill-rule="evenodd" d="M10.796 2.244C12.653 1.826 14 3.422 14 5v14c0 1.578-1.347 3.174-3.204 2.756C6.334 20.752 3 16.766 3 12s3.334-8.752 7.796-9.756m5.497 6.049a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L17.586 13H9a1 1 0 1 1 0-2h8.586l-1.293-1.293a1 1 0 0 1 0-1.414" clip-rule="evenodd"/></svg>
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magic List</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="icon" href="./assets/images/logo.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="">
+  <nav class="container py-2 d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-cennter gap-1 flex-grow-1">
+      <img class="w-[2%]" style="width: 3%; height: fit-content;" src="./assets/images/magiclist.png" alt="">
+      <h3>Magic List</h3>
+    </div>
+    <div class="d-flex align-items-end gap-3">
+      <div class="dropdown d-flex align-items-center gap-1">
+        <svg id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" xmlns="http://www.w3.org/2000/svg"
+          width="30" height="30" viewBox="0 0 24 24">
+          <path fill="#000" d="M16 10c0 2.21-1.79 4-4 4s-4-1.79-4-4s1.79-4 4-4s4 1.79 4 4" />
+          <path fill="#000" fill-rule="evenodd"
+            d="M12 24c6.63 0 12-5.37 12-12S18.63 0 12 0S0 5.37 0 12s5.37 12 12 12m6.27-2.96C21.13 19.05 23 15.75 23 12c0-6.08-4.92-11-11-11S1 5.92 1 12c0 3.75 1.87 7.05 4.73 9.04C6.435 19.72 8.71 16 12 16s5.56 3.72 6.27 5.04"
+            clip-rule="evenodd" />
+        </svg>
+        <ul class="dropdown-menu p-2 " aria-labelledby="dropdownMenuButton">
+          <li class="d-flex justify-content-between align-items-cennter">
+            <p>Profile</p>
+            <svg id="toggleDarkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#000"
+                d="m21.067 11.857l-.642-.388zm-8.924-8.924l-.388-.642zM21.25 12A9.25 9.25 0 0 1 12 21.25v1.5c5.937 0 10.75-4.813 10.75-10.75zM12 21.25A9.25 9.25 0 0 1 2.75 12h-1.5c0 5.937 4.813 10.75 10.75 10.75zM2.75 12A9.25 9.25 0 0 1 12 2.75v-1.5C6.063 1.25 1.25 6.063 1.25 12zm12.75 2.25A5.75 5.75 0 0 1 9.75 8.5h-1.5a7.25 7.25 0 0 0 7.25 7.25zm4.925-2.781A5.75 5.75 0 0 1 15.5 14.25v1.5a7.25 7.25 0 0 0 6.21-3.505zM9.75 8.5a5.75 5.75 0 0 1 2.781-4.925l-.776-1.284A7.25 7.25 0 0 0 8.25 8.5zM12 2.75a.38.38 0 0 1-.268-.118a.3.3 0 0 1-.082-.155c-.004-.031-.002-.121.105-.186l.776 1.284c.503-.304.665-.861.606-1.299c-.062-.455-.42-1.026-1.137-1.026zm9.71 9.495c-.066.107-.156.109-.187.105a.3.3 0 0 1-.155-.082a.38.38 0 0 1-.118-.268h1.5c0-.717-.571-1.075-1.026-1.137c-.438-.059-.995.103-1.299.606z" />
+            </svg>
+
+          </li>
+          <li class="d-flex" id="logoutBtn">
+            <p>
+              Logout
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#000" fill-rule="evenodd"
+                d="M10.796 2.244C12.653 1.826 14 3.422 14 5v14c0 1.578-1.347 3.174-3.204 2.756C6.334 20.752 3 16.766 3 12s3.334-8.752 7.796-9.756m5.497 6.049a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L17.586 13H9a1 1 0 1 1 0-2h8.586l-1.293-1.293a1 1 0 0 1 0-1.414"
+                clip-rule="evenodd" />
+            </svg>
+          </li>
+        </ul>
       </div>
-      
-      <!-- <div id="app">
+    </div>
+
+    <!-- <div id="app">
         <div id="sessionInfo" class="session-info">
           <span id="sessionTimer"></span>
           <button id="logoutBtn" class="btn btn-sm btn-outline-danger">
@@ -47,157 +61,220 @@
           </button>
         </div>
       </div> -->
-    </nav>
+  </nav>
 
-    <!-- Magic list App -->
-    <div class="app container py-4">
-      <!-- filter section -->
-      <section class="d-flex justify-content-between gap-5">
-        <div class="d-flex gap-5">
-           <!-- search by status -->
-           <div class="d-flex align-items-baseline gap-4 ">
-             <p>Filter</p>
-             <div class="dropdown">
-               <button class="btn p-2 dropdown-toggle btn-outline-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Active
-               </button>
-               <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="#">Completed</a></li>
-                 <li><a class="dropdown-item" href="#">In Progress</a></li>
-                 <li><a class="dropdown-item" href="#">Active</a></li>
-               </ul>
-             </div>
-           </div>
-           <!-- search by date -->
-           <div class="d-flex align-items-baseline gap-4 ">
-             <p>Filter</p>
-             <div class="dropdown">
-               <button class="btn p-2 dropdown-toggle btn-outline-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Active
-               </button>
-               <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="#">Due Date</a></li>
-                 <li><a class="dropdown-item" href="#">
-                   <input type="date">
-                 </a></li>
-               </ul>
-             </div>
-           </div>
-         </div>
-         <div class="d-flex align-items-center gap-5">
-           <!-- input search -->
-           <div class="position-relative">
-             <input type="text" class="form-control ps-5" placeholder="Search...">
-             <svg xmlns="http://www.w3.org/2000/svg" 
-                  width="20" height="20" viewBox="0 0 24 24"
-                  class="position-absolute top-50" 
-                  style="right: 1rem; transform: translateY(-50%);"
-                  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-               <path d="M19 11.5a7.5 7.5 0 1 1-15 0a7.5 7.5 0 0 1 15 0m-2.107 5.42l3.08 3.08"/>
-             </svg>
-           </div>
-           <!-- add new task btn -->
-           <div class="bg-primary text-white rounded p-2 d-flex justify-content-center align-items-center gap-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1" d="M12 17V7m-5 5h10"/></svg>
-              <p class="mb-0">Add New</p>
+  <!-- Magic list App -->
+  <div class="app container py-4">
+    <!-- filter section -->
+    <section class="d-flex justify-content-between gap-5">
+      <div class="d-flex gap-5">
+        <!-- search by status -->
+        <div class="d-flex align-items-baseline gap-4 ">
+          <p>Filter</p>
+          <div class="dropdown">
+            <button id="filter-btn" class="btn p-2 dropdown-toggle btn-outline-secondary" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Active
+            </button>
+            <ul onclick="handleDropdownClick(event)" class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Completed</a></li>
+              <li><a class="dropdown-item" href="#">In Progress</a></li>
+              <li><a class="dropdown-item" href="#">Active</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- search by date -->
+        <div class="d-flex align-items-baseline gap-4 ">
+          <p>Sort</p>
+          <div class="dropdown">
+            <button id="dropdown-btn1" class="btn p-2 dropdown-toggle btn-outline-secondary" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Added Date
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Due Date</a></li>
+              <li><a class="dropdown-item" href="#">
+                  <input type="date">
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-5">
+        <!-- input search -->
+        <div class="position-relative">
+          <input type="text" class="form-control ps-5" placeholder="Search...">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+            class="position-absolute top-50" style="right: 1rem; transform: translateY(-50%);" fill="none"
+            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M19 11.5a7.5 7.5 0 1 1-15 0a7.5 7.5 0 0 1 15 0m-2.107 5.42l3.08 3.08" />
+          </svg>
+        </div>
+        <!-- add new task btn -->
+        <div data-bs-toggle="modal" data-bs-target="#exampleModal"
+          class="bg-primary text-white rounded p-2 d-flex justify-content-center align-items-center gap-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1" d="M12 17V7m-5 5h10" />
+          </svg>
+          <p class="mb-0">Add New</p>
+        </div>
+      </div>
+    </section>
+    <div class="task-table">
+      <table class="table table-hover mb-0">
+        <thead>
+          <tr>
+            <th width="5%">Status</th>
+            <th width="30%">Task Name</th>
+            <th width="15%">Priority</th>
+            <th width="30%">Date</th>
+            <th width="20%">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" class="status-checkbox" /></td>
+            <td>Task Name1</td>
+            <td class="priority-high text-danger d-flex align-items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="m21.17 15.4l-5.91-9.85c-.78-1.3-1.96-2.04-3.26-2.04s-2.48.74-3.26 2.03L2.83 15.4c-.44.73-.66 1.49-.66 2.21c0 .57.14 1.13.42 1.62C3.23 20.35 4.47 21 6 21h12c1.53 0 2.77-.65 3.41-1.77c.28-.49.42-1.02.42-1.58c.01-.74-.21-1.51-.66-2.25M12 8.45c.85 0 1.55.7 1.55 1.55s-.69 1.55-1.55 1.55c-.85 0-1.55-.7-1.55-1.55c0-.86.69-1.55 1.55-1.55m1.69 8.46c-.03.04-.8.92-2.07.92h-.15c-.51-.03-.93-.25-1.18-.63c-.31-.47-.36-1.11-.12-1.82l.41-1.22c.23-.68.01-.79-.11-.85l-.14-.02c-.25 0-.6.15-.71.21c-.1.05-.23.03-.31-.07c-.07-.1-.07-.23.01-.32c.03-.04.87-.99 2.22-.91c.51.03.93.25 1.18.63c.32.47.36 1.11.12 1.83l-.41 1.22c-.23.68-.01.79.11.85l.14.02c.25 0 .6-.15.71-.2c.11-.06.23-.03.31.07c.07.07.07.2-.01.29" />
+              </svg>
+              Urgent
+            </td>
+            <td>☒ Mar 23, 2025 - Yo 09 PM</td>
+            <td>
+              <button class="action-btn">
+                <i class="fas fa-ellipsis-v"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="status-checkbox" /></td>
+            <td>Task Name2*</td>
+            <td class="priority-help text-warning d-flex align-items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128">
+                <radialGradient id="notoFire0" cx="68.884" cy="124.296" r="70.587"
+                  gradientTransform="matrix(-1 -.00434 -.00713 1.6408 131.986 -79.345)" gradientUnits="userSpaceOnUse">
+                  <stop offset=".314" stop-color="#ff9800" />
+                  <stop offset=".662" stop-color="#ff6d00" />
+                  <stop offset=".972" stop-color="#f44336" />
+                </radialGradient>
+                <path fill="url(#notoFire0)"
+                  d="M35.56 40.73c-.57 6.08-.97 16.84 2.62 21.42c0 0-1.69-11.82 13.46-26.65c6.1-5.97 7.51-14.09 5.38-20.18c-1.21-3.45-3.42-6.3-5.34-8.29c-1.12-1.17-.26-3.1 1.37-3.03c9.86.44 25.84 3.18 32.63 20.22c2.98 7.48 3.2 15.21 1.78 23.07c-.9 5.02-4.1 16.18 3.2 17.55c5.21.98 7.73-3.16 8.86-6.14c.47-1.24 2.1-1.55 2.98-.56c8.8 10.01 9.55 21.8 7.73 31.95c-3.52 19.62-23.39 33.9-43.13 33.9c-24.66 0-44.29-14.11-49.38-39.65c-2.05-10.31-1.01-30.71 14.89-45.11c1.18-1.08 3.11-.12 2.95 1.5" />
+                <radialGradient id="notoFire1" cx="64.921" cy="54.062" r="73.86"
+                  gradientTransform="matrix(-.0101 .9999 .7525 .0076 26.154 -11.267)" gradientUnits="userSpaceOnUse">
+                  <stop offset=".214" stop-color="#fff176" />
+                  <stop offset=".328" stop-color="#fff27d" />
+                  <stop offset=".487" stop-color="#fff48f" />
+                  <stop offset=".672" stop-color="#fff7ad" />
+                  <stop offset=".793" stop-color="#fff9c4" />
+                  <stop offset=".822" stop-color="#fff8bd" stop-opacity="0.804" />
+                  <stop offset=".863" stop-color="#fff6ab" stop-opacity="0.529" />
+                  <stop offset=".91" stop-color="#fff38d" stop-opacity="0.209" />
+                  <stop offset=".941" stop-color="#fff176" stop-opacity="0" />
+                </radialGradient>
+                <path fill="url(#notoFire1)"
+                  d="M76.11 77.42c-9.09-11.7-5.02-25.05-2.79-30.37c.3-.7-.5-1.36-1.13-.93c-3.91 2.66-11.92 8.92-15.65 17.73c-5.05 11.91-4.69 17.74-1.7 24.86c1.8 4.29-.29 5.2-1.34 5.36c-1.02.16-1.96-.52-2.71-1.23a16.1 16.1 0 0 1-4.44-7.6c-.16-.62-.97-.79-1.34-.28c-2.8 3.87-4.25 10.08-4.32 14.47C40.47 113 51.68 124 65.24 124c17.09 0 29.54-18.9 19.72-34.7c-2.85-4.6-5.53-7.61-8.85-11.88" />
+              </svg>
+              Hight
+            </td>
+            <td>☒ Mar 23, 2025 - Yo 09 PM</td>
+            <td>
+              <button class="action-btn">
+                <i class="fas fa-ellipsis-v"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="status-checkbox" /></td>
+            <td>Task Name3</td>
+            <td class="priority-medium d-flex align-items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#1f17e2"
+                  d="m11.15 15.18l-1.42-1.41l1.42-1.42l1.41 1.42l1.41-1.42l-1.41-1.41l1.41-1.41l1.42 1.41l1.41-1.41l-2.83-2.83l-7.07 7.07l2.83 2.83zM3.08 19l3.12-3.11l-2.12-2.12l9.89-9.9L16.1 6l1.4-1.42l-1.4-1.42l1.4-1.41L21.75 6l-1.41 1.4L18.92 6L17.5 7.4l2.13 2.13l-9.9 9.89l-2.12-2.12l-4.53 4.54z" />
+              </svg>
+              Medium
+            </td>
+            <td>☒ Mar 23, 2025 - Yo 09 PM</td>
+            <td>
+              <button class="action-btn">
+                <i class="fas fa-ellipsis-v"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="status-checkbox" /></td>
+            <td>Task Name5</td>
+            <td class="priority-low d-flex align-items-center gap-1 text-success">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128">
+                <path fill="#bdcf47"
+                  d="M112.7 59.21s3.94-2.21 4.93-2.77s4.6-2.82 5.91-.84c.77 1.16-.7 4.44-3.05 7.86c-2.14 3.13-7.12 9.56-7.4 10.83s1.11 6.36 1.53 8.33s1.74 6.71 1.17 8.54s-3.43 6.85-10.75 6.76c-5.82-.07-7.51-1.78-7.7-2.82c-.14-.75-.56-3.24-.56-3.24s-4.79 2.96-7.04 4.08s-8.31 4.22-8.31 4.22s1.17 5.35 1.36 7.51s.86 5.25-.28 7.32c-1.03 1.88-4.25 5.02-11.83 4.97c-5.92-.04-7.41-1.88-8.35-3c-.94-1.13-1.13-6.48-1.13-7.6s-.19-5.07-.19-5.07s-8.02-.4-12.86-.75c-4.38-.32-10.16-.99-10.16-.99s.21 2.33.42 4.01c.19 1.5.23 4.64-1.34 6.17c-2.11 2.06-7.56 2.21-10.56 1.92c-3-.28-7.18-1.83-8.4-4.55s.38-6.29 1.03-8.35c.58-1.81 1.6-4.41 1.22-5.16s-4.04-1.69-9.29-6.95c-5.26-5.26-12.13-23.52 3.28-36.23c15.49-12.76 43.81 1.1 45.31 2.04c1.54.96 53.04 3.76 53.04 3.76" />
+                <path fill="#6e823a"
+                  d="M66.25 25.28c-13.93.62-24.38 7.52-29.57 15.06c-3.1 4.5-4.65 7.74-4.65 7.74s4.81.14 9.15 2.46c5 2.67 10.8 5.56 14.61 18.13c2.87 9.5 3.98 18.53 11.44 20.52c8.45 2.25 28.16 1.13 37.59-8.02s11.26-16.05 8.87-25.06s-13.17-25.05-28.16-29.28C79.06 25 72.58 25 66.25 25.28" />
+                <path fill="#484e23"
+                  d="M111.93 51.32c-.42-.99-1.3-2.5-1.3-2.5s-.07 2.05-.25 3.13c-.28 1.76-1.25 5.42-1.81 4.88c-1-.97-5.73-6.92-7.98-10.23c-1.71-2.52-7.6-9.11-7.74-11.26c-.07-1.06 1.27-4.65 1.27-4.65s-1.22-.7-2.35-1.34c-.88-.49-2.16-1.03-2.16-1.03s-.77 4.9-1.62 5.82c-.75.81-5.32 2.6-8.87 3.94c-4.29 1.62-8.45 3.73-10 4.01c-1.36.25-9.09-1.41-12-1.97c-3.66-.7-9.18-2.26-10.45-3.17c-1.48-1.06-3.07-3.78-3.07-3.78s-.89.61-1.78 1.31c-.88.69-2.02 2.06-2.02 2.06s2.31 2.32 2.44 3.18c.18 1.2-1.27 2.83-2.46 4.38c-.72.93-2.75 4.85-2.75 4.85s.97.09 2.15.63c1.23.57 2.38 1.16 2.38 1.16s2.97-6.9 4.9-7.53c1.65-.54 6.3.99 9.68 1.69c4.79.99 9.64 1.87 10.66 3.17c1.06 1.34 2.06 6.68 3.03 11.19C70.89 64.2 73.64 77.02 73 78c-.63.99-5.7.63-8.59.28c-2.45-.3-6.41-1.76-6.41-1.76s.58 2.11.77 2.67c.28.81 1.16 3.06 1.16 3.06s5.67 2.5 22.42.95s25.03-12.96 27.38-18.02c3.14-6.78 3.54-10.39 3.54-10.39s-.92-2.48-1.34-3.47M96.65 73.21c-4.24 2.67-15.2 5.49-17.18 4.43c-1.58-.85-3.94-13.94-5.07-19.78c-.72-3.74-2.45-9.42-1.41-11.19c.7-1.2 4.79-2.99 7.81-4.4c2.87-1.33 6.97-3.13 8.17-2.99c1.7.2 5.35 6.12 9.01 11.19s7.67 10.35 7.74 12.18c.09 1.84-4.7 7.82-9.07 10.56" />
+                <path fill="#2a2b28"
+                  d="M41.18 65.86c.5 2.83-.95 5.75-4.07 6.02c-2.56.22-4.59-1.57-5.09-4.4s1.14-5.49 3.68-5.94c2.52-.45 4.98 1.48 5.48 4.32m-18.36.25c.07 2.84-2.42 5.69-5.5 5.11c-2.53-.48-3.99-2.73-3.71-5.55c.29-2.82 2.59-4.9 5.15-4.65s3.99 2.13 4.06 5.09m7.95 10.48c1.16-.79 3.1-2.67 4.36-1.06c1.27 1.62-.92 3.1-2.18 4.01c-1.27.92-4.08 3.17-6.12 3.17c-1.9 0-4.79-2.32-6.62-3.87c-1.49-1.26-2.18-2.89-1.34-3.87s2.14-.62 3.24.35c1.27 1.13 3.72 3.38 4.72 3.38c.98.01 2.39-1.05 3.94-2.11" />
+              </svg>
+              Low
+            </td>
+            <td>☒ Mar 23, 2025 - Yo 09 PM</td>
+            <td>
+              <button class="action-btn">
+                <i class="fas fa-ellipsis-v"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-center align-items-center gap-2">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Magic List</h1>
+        <img  style="width: 5%; height: fit-content;" src="./assets/images/magiclist.png" alt="">
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Task Name</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <p>Priority</p>
+            <div class="dropdown w-100 ">
+              <button id="filter-btn"  class="btn w-100 p-2 dropdown-toggle btn-outline-secondary" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Active
+              </button>
+              <ul onclick="handleDropdownClick(event)" class="dropdown-menu w-100">
+                <li><a class="dropdown-item" href="#">Priority</a></li>
+                <li><a class="dropdown-item" href="#">Urgent</a></li>
+                <li><a class="dropdown-item" href="#">High</a></li>
+                <li><a class="dropdown-item" href="#">Medium</a></li>
+                <li><a class="dropdown-item" href="#">Low</a></li>
+              </ul>
             </div>
           </div>
-      </section>
-      <div class="task-table">
-        <table class="table table-hover mb-0">
-          <thead>
-            <tr>
-              <th width="5%">Status</th>
-              <th width="30%">Task Name</th>
-              <th width="15%">Priority</th>
-              <th width="30%">Date</th>
-              <th width="20%">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><input type="checkbox" class="status-checkbox" /></td>
-              <td>Task Name1</td>
-              <td class="priority-high">▲ Upgrade</td>
-              <td>☒ Mar 23, 2025 - Yo 09 PM</td>
-              <td>
-                <button class="action-btn">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" class="status-checkbox" /></td>
-              <td>Task Name2*</td>
-              <td class="priority-help">▲ Help</td>
-              <td>☒ Mar 23, 2025 - Yo 09 PM</td>
-              <td>
-                <button class="action-btn">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" class="status-checkbox" /></td>
-              <td>Task Name3</td>
-              <td class="priority-medium">▼ Medium</td>
-              <td>☒ Mar 23, 2025 - Yo 09 PM</td>
-              <td>
-                <button class="action-btn">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" class="status-checkbox" /></td>
-              <td>Task Name4</td>
-              <td class="priority-low">%</td>
-              <td>☒ Mar 23, 2025 - Yo 09 PM</td>
-              <td>
-                <button class="action-btn">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" class="status-checkbox" /></td>
-              <td>Task Name5</td>
-              <td class="priority-low">%</td>
-              <td>☒ Mar 23, 2025 - Yo 09 PM</td>
-              <td>
-                <button class="action-btn">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" class="status-checkbox" /></td>
-              <td>Task Name6</td>
-              <td class="priority-low">%</td>
-              <td>☒ Mar 23, 2025 - Yo 09 PM</td>
-              <td>
-                <button class="action-btn">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" class="status-checkbox" /></td>
-              <td>Task Name7</td>
-              <td class="priority-help">▲ Help</td>
-              <td>☒ Mar 23, 2025 - Yo 09 PM</td>
-              <td>
-                <button class="action-btn">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary">Save</button>
       </div>
     </div>
+  </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="./assets/js/main.js"></script>
-  </body>
+  <!-- script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+
 </html>

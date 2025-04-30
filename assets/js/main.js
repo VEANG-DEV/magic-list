@@ -1,10 +1,8 @@
 import { AuthUtil } from "./utils/AuthUtil.js";
-import { ToggleTheme } from "./ToggleDarkMode.js";
 class Main extends AuthUtil {
   constructor() {
     super();
     this.sessionTimer = null;
-    this.toggleTheme = null;
     this.init();
   }
 
@@ -15,8 +13,6 @@ class Main extends AuthUtil {
     AuthUtil.startSessionTimer(this.sessionTimer);
     AuthUtil.displayUserInfo();
 
-    //initialize dark mode toggle
-    this.toggleTheme = new ToggleTheme();
   }
 
   async #checkAuth() {
